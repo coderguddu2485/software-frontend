@@ -23,10 +23,10 @@ const HeaderDown1 = ({setView}) => {
   }, []);
 
   return (
-    <section className="bg-[#fce9e9] py-12 px-10 flex flex-col md:flex-row items-center justify-between overflow-hidden">
+    <section className="bg-[#fce9e9] py-12 px-10 flex flex-col md:flex-row items-center justify-between overflow-hidden relative min-h-[500px]">
       
       {/* Left Content */}
-      <div className="max-w-xl space-y-6">
+      <div className="max-w-xl space-y-6 z-10">
         <h1 className="text-4xl font-bold text-[#414146] leading-tight">
           Skip the travel!<br />
           Take Online Doctor Consultation
@@ -69,11 +69,11 @@ const HeaderDown1 = ({setView}) => {
       </div>
 
       {/* Right Content: Image */}
-      <div className="mt-10 md:mt-0 absolute pl-145 pt-32">
+      <div className="absolute bottom-0 right-0 w-full md:w-1/2 flex justify-end items-end pointer-events-none">
         <img 
           src='./assets/mainImage.png' 
           alt="Online Consultation" 
-          className="max-w-[650px] min-h-[300px] w-full  "
+          className="max-w-[400px] lg:max-w-[600px] w-full object-contain object-bottom"
         />
       </div>
 
